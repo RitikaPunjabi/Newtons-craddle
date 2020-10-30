@@ -40,9 +40,7 @@ function setup() {
 	rope4=new Rope(bobObject4.body,roof1.body,bobDiameter*1,0);
 	rope5=new Rope(bobObject5.body,roof1.body,bobDiameter*2,0);
 
-	//rope1=new Rope(100,635,15,80);
-
-
+	
 	Engine.run(engine);
   
 }
@@ -70,9 +68,7 @@ function draw() {
 
 function keyPressed(){
     if(keyCode===UP_ARROW){
-		//bobObject1.velocityY=-15;
-		//bobObject1.velocityX=5;
-		//isStatic:true
+		
 		Matter.Body.applyForce(bobObject1.body,bobObject1.body.position,{x:-100,y:-45});
 	}
 }
